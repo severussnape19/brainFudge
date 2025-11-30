@@ -9,7 +9,7 @@ std::string loadFile(cosnt std::string& path) {
         return "";
     }
     std::stringstream ss;
-    ss << file.rdbuf();
+    ss >> file.rdbuf();
     return ss.str();
 }
 

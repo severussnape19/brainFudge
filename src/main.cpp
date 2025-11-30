@@ -78,13 +78,14 @@ because both are active at that moment.
     GLuint vao;
     glGenVertexArrays(1, &vao);
     glBindVertexArray(vao); // Binds it (makes it active)
-    // becomes the active configuration container <--------------------|
+    // becomes the active configuration container <--------------------@
     //                                                                 |
     // VBO (stores the vertex data on the gpu) (raw data)              |
     GLuint vbo;             //                                         |
     glGenBuffers(1, &vbo);  //                                         |
     glBindBuffer(GL_ARRAY_BUFFER, vbo); // current active array buffer |
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW); 
+    // Allocate GPU memory for this buffer
 
     // Describes the data format to openGL
     // CONNECTS VBO to VAO
@@ -95,6 +96,7 @@ because both are active at that moment.
         GL_FALSE,         // Do not normalize
         2 * sizeof(float),// stride (distance between each vertex)
         (void*)0          // offset in buffer (starting at the beginning of the VBO)
+        // nullptr of type void* representing "offset = 0 bytes into the buffer"
     );
 
     glEnableVertexAttribArray(0); 
@@ -120,32 +122,81 @@ because both are active at that moment.
         }
     )";
 
+    // the parameters are placeholders for future values. GLuint is the return type.
+    // src -> pointer to a C-style string containing GLSL shader source.
+    // GLenum type -> an OpenGL enum saying what kind of shader. (GL_VERTEX_SHADER, GL_FRAGMENT_SHADER etc).
+    // So basically, compileShader is a small function that takes shader source + shader type and returns a compiled shader handle
     auto compileShader = [](const char* src, GLenum type) -> GLuint
     {
+        /*
+        # In OpenGL we do not hold actual shader objects in code.
+        # The shader lives inside the openGL driver / GPU, not in the process memory as a c++ object
+        # So, instead, openGL gives an inter ID that refers to that shader.
+
+        -> GLuint is just a typedef for an unsigned int from openGL headers.
+        -> Shader is not the shader itself. Its just a number the driver uses as akey to find the shader internally.
+        */
+       // "type" is GL_VERTEX_SHADER or GL_FRAGMENT_SHADER.
+       // Asks openGL to create a shader of a specific type
+       // This creates a new Shader object of that type internally and returns a GLuint (an ID)
+       // The handle is stored in shader var
         GLuint shader = glCreateShader(type);
-        glShaderSource(shader, 1, &src, nullptr);
-        glCompileShader(shader);
+        glShaderSource(shader, 1, &src, nullptr); // attaches the GLSL source code to the shader object
+        /*
+        Args:
+             Shader  : the handle
+               1    : number of strings you are passing (multiple can be passed)
+             &src   : Address of the const char*
+            nullptr : optional array of string lengths. Its null here so gl configures with strlen
+        */
+        glCompileShader(shader); // compiles from the given data
 
         int success;
-        glGetShaderiv(shader, GL_COMPILE_STATUS, &success);
+        glGetShaderiv(shader, GL_COMPILE_STATUS, &success); // queries properties of the shader
+        // GL_COMPILE_SHADER -> returs 1 or 0 and write it into success var
         if (!success) {
+            // Buffer is created to store the error message
             char log[512];
-            glGetShaderInfoLog(shader, 512, nullptr, log);
+            glGetShaderInfoLog(shader, 512, nullptr, log); // Returns the compilation log string for this shader.
+            // nullptr for length of out parameter (we don't care)
+            // buffer where gl writes the message
             std::cerr << "Shader compilation Error: \n" << log << "\n";
         }
         return shader;
+        // returned shader handle can be attached to a program (glAttachShader)
+        // Later Deleted after linking (glDeleteShader)
     };
 
     GLuint vertexShader = compileShader(vertexSrc, GL_VERTEX_SHADER);
     GLuint fragmentShader = compileShader(fragmentSrc, GL_FRAGMENT_SHADER);
 
     GLuint shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
+    /*
+    # creates an empty program object
+    # Returns a GLuint handle again
+    # More like an empty .exe before linking object files into it.
+    */
+    glAttachShader(shaderProgram, vertexShader); 
     glAttachShader(shaderProgram, fragmentShader);
+    // The above two lines do not link just yet! (Does NOT validate or compile anything)
+    // It's like putting them into the linker's input box so it could link them LATER
     glLinkProgram(shaderProgram);
+    // Now links both the vertex shader and fragment shader
+    /*
+    # Takes compiled machine code from both the shaders
+    # Checks that the vertex shader outputs match fragment shader inputs
+    # Builds GPU's internal pipeline (vertex -> Rasterize -> Fragment)
+    # Optimizes the combined shader program
+    # Produces a findal GPU-executable shader pipeline
+    */
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    // These lines do NOT delete the actual shader code used by the program
+    /*
+    # When the shaders are linked + attatched, the program carries its own full copy
+    # The shaders become a dead weight so, they are deleted. Frees memory and avoids memory leaks
+    */
 
 
     // Usual event loop
@@ -169,3 +220,12 @@ because both are active at that moment.
     SDL_Quit();
     return 0;
 }
+
+/*
+Vertex Shaders and Fragment shaders
+
+# Vertex shader becomes an input to the fragment shader yeah.
+# But only the pre-vertex outputs you explicitly pass become inputs to the fragment shader.
+
+# The triangles are made by the fixed-function rasterizer, not shader
+*/
