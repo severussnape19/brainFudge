@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o CMakeFiles/RunOpenGL.dir/src/glad.c.o CMakeFiles/RunOpenGL.dir/src/main.cpp.o -o RunOpenGL  /usr/lib/x86_64-linux-gnu/libSDL2.so -lGL 
