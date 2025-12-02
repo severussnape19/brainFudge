@@ -129,6 +129,78 @@ RunOpenGL/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/build
 .PHONY : RunOpenGL/fast
 
+src/Mesh/Mesh.o: src/Mesh/Mesh.cpp.o
+.PHONY : src/Mesh/Mesh.o
+
+# target to build an object file
+src/Mesh/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o
+.PHONY : src/Mesh/Mesh.cpp.o
+
+src/Mesh/Mesh.i: src/Mesh/Mesh.cpp.i
+.PHONY : src/Mesh/Mesh.i
+
+# target to preprocess a source file
+src/Mesh/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.i
+.PHONY : src/Mesh/Mesh.cpp.i
+
+src/Mesh/Mesh.s: src/Mesh/Mesh.cpp.s
+.PHONY : src/Mesh/Mesh.s
+
+# target to generate assembly for a file
+src/Mesh/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.s
+.PHONY : src/Mesh/Mesh.cpp.s
+
+src/Renderer/VertexArray.o: src/Renderer/VertexArray.cpp.o
+.PHONY : src/Renderer/VertexArray.o
+
+# target to build an object file
+src/Renderer/VertexArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o
+.PHONY : src/Renderer/VertexArray.cpp.o
+
+src/Renderer/VertexArray.i: src/Renderer/VertexArray.cpp.i
+.PHONY : src/Renderer/VertexArray.i
+
+# target to preprocess a source file
+src/Renderer/VertexArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.i
+.PHONY : src/Renderer/VertexArray.cpp.i
+
+src/Renderer/VertexArray.s: src/Renderer/VertexArray.cpp.s
+.PHONY : src/Renderer/VertexArray.s
+
+# target to generate assembly for a file
+src/Renderer/VertexArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.s
+.PHONY : src/Renderer/VertexArray.cpp.s
+
+src/Renderer/VertexBuffer.o: src/Renderer/VertexBuffer.cpp.o
+.PHONY : src/Renderer/VertexBuffer.o
+
+# target to build an object file
+src/Renderer/VertexBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o
+.PHONY : src/Renderer/VertexBuffer.cpp.o
+
+src/Renderer/VertexBuffer.i: src/Renderer/VertexBuffer.cpp.i
+.PHONY : src/Renderer/VertexBuffer.i
+
+# target to preprocess a source file
+src/Renderer/VertexBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.i
+.PHONY : src/Renderer/VertexBuffer.cpp.i
+
+src/Renderer/VertexBuffer.s: src/Renderer/VertexBuffer.cpp.s
+.PHONY : src/Renderer/VertexBuffer.s
+
+# target to generate assembly for a file
+src/Renderer/VertexBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.s
+.PHONY : src/Renderer/VertexBuffer.cpp.s
+
 src/Shader/Shader.o: src/Shader/Shader.cpp.o
 .PHONY : src/Shader/Shader.o
 
@@ -152,6 +224,30 @@ src/Shader/Shader.s: src/Shader/Shader.cpp.s
 src/Shader/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.s
 .PHONY : src/Shader/Shader.cpp.s
+
+src/Window/Window.o: src/Window/Window.cpp.o
+.PHONY : src/Window/Window.o
+
+# target to build an object file
+src/Window/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o
+.PHONY : src/Window/Window.cpp.o
+
+src/Window/Window.i: src/Window/Window.cpp.i
+.PHONY : src/Window/Window.i
+
+# target to preprocess a source file
+src/Window/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.i
+.PHONY : src/Window/Window.cpp.i
+
+src/Window/Window.s: src/Window/Window.cpp.s
+.PHONY : src/Window/Window.s
+
+# target to generate assembly for a file
+src/Window/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RunOpenGL.dir/build.make CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.s
+.PHONY : src/Window/Window.cpp.s
 
 src/glad.o: src/glad.c.o
 .PHONY : src/glad.o
@@ -210,9 +306,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RunOpenGL"
+	@echo "... src/Mesh/Mesh.o"
+	@echo "... src/Mesh/Mesh.i"
+	@echo "... src/Mesh/Mesh.s"
+	@echo "... src/Renderer/VertexArray.o"
+	@echo "... src/Renderer/VertexArray.i"
+	@echo "... src/Renderer/VertexArray.s"
+	@echo "... src/Renderer/VertexBuffer.o"
+	@echo "... src/Renderer/VertexBuffer.i"
+	@echo "... src/Renderer/VertexBuffer.s"
 	@echo "... src/Shader/Shader.o"
 	@echo "... src/Shader/Shader.i"
 	@echo "... src/Shader/Shader.s"
+	@echo "... src/Window/Window.o"
+	@echo "... src/Window/Window.i"
+	@echo "... src/Window/Window.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"

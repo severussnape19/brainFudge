@@ -9,7 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lak_02/Documents/opengl-stuff/src/glad.c" "CMakeFiles/RunOpenGL.dir/src/glad.c.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/glad.c.o.d"
+  "/home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp" "CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o.d"
+  "/home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp" "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o.d"
+  "/home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp" "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o.d"
   "/home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp" "CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o.d"
+  "/home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp" "CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o.d"
   "/home/lak_02/Documents/opengl-stuff/src/main.cpp" "CMakeFiles/RunOpenGL.dir/src/main.cpp.o" "gcc" "CMakeFiles/RunOpenGL.dir/src/main.cpp.o.d"
   )
 

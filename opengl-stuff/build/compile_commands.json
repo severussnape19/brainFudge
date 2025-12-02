@@ -1,9 +1,33 @@
 [
 {
   "directory": "/home/lak_02/Documents/opengl-stuff/build",
+  "command": "/usr/bin/c++  -I/home/lak_02/Documents/opengl-stuff/include -I/home/lak_02/Documents/opengl-stuff/src -isystem /usr/include/SDL2 -std=gnu++17 -o CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp",
+  "file": "/home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp",
+  "output": "CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o"
+},
+{
+  "directory": "/home/lak_02/Documents/opengl-stuff/build",
+  "command": "/usr/bin/c++  -I/home/lak_02/Documents/opengl-stuff/include -I/home/lak_02/Documents/opengl-stuff/src -isystem /usr/include/SDL2 -std=gnu++17 -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp",
+  "file": "/home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp",
+  "output": "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o"
+},
+{
+  "directory": "/home/lak_02/Documents/opengl-stuff/build",
+  "command": "/usr/bin/c++  -I/home/lak_02/Documents/opengl-stuff/include -I/home/lak_02/Documents/opengl-stuff/src -isystem /usr/include/SDL2 -std=gnu++17 -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp",
+  "file": "/home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp",
+  "output": "CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o"
+},
+{
+  "directory": "/home/lak_02/Documents/opengl-stuff/build",
   "command": "/usr/bin/c++  -I/home/lak_02/Documents/opengl-stuff/include -I/home/lak_02/Documents/opengl-stuff/src -isystem /usr/include/SDL2 -std=gnu++17 -o CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp",
   "file": "/home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp",
   "output": "CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o"
+},
+{
+  "directory": "/home/lak_02/Documents/opengl-stuff/build",
+  "command": "/usr/bin/c++  -I/home/lak_02/Documents/opengl-stuff/include -I/home/lak_02/Documents/opengl-stuff/src -isystem /usr/include/SDL2 -std=gnu++17 -o CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp",
+  "file": "/home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp",
+  "output": "CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o"
 },
 {
   "directory": "/home/lak_02/Documents/opengl-stuff/build",

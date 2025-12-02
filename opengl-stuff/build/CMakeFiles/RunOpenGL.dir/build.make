@@ -69,10 +69,52 @@ include CMakeFiles/RunOpenGL.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RunOpenGL.dir/flags.make
 
+CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
+CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o: /home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp
+CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp
+
+CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp > CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.i
+
+CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lak_02/Documents/opengl-stuff/src/Mesh/Mesh.cpp -o CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.s
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o: /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp > CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.i
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexArray.cpp -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.s
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o: /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp > CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.i
+
+CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lak_02/Documents/opengl-stuff/src/Renderer/VertexBuffer.cpp -o CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.s
+
 CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
 CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o: /home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp
 CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp
 
 CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.i: cmake_force
@@ -83,10 +125,24 @@ CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lak_02/Documents/opengl-stuff/src/Shader/Shader.cpp -o CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.s
 
+CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
+CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o: /home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp
+CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp
+
+CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp > CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.i
+
+CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lak_02/Documents/opengl-stuff/src/Window/Window.cpp -o CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.s
+
 CMakeFiles/RunOpenGL.dir/src/glad.c.o: CMakeFiles/RunOpenGL.dir/flags.make
 CMakeFiles/RunOpenGL.dir/src/glad.c.o: /home/lak_02/Documents/opengl-stuff/src/glad.c
 CMakeFiles/RunOpenGL.dir/src/glad.c.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RunOpenGL.dir/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/RunOpenGL.dir/src/glad.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/glad.c.o -MF CMakeFiles/RunOpenGL.dir/src/glad.c.o.d -o CMakeFiles/RunOpenGL.dir/src/glad.c.o -c /home/lak_02/Documents/opengl-stuff/src/glad.c
 
 CMakeFiles/RunOpenGL.dir/src/glad.c.i: cmake_force
@@ -100,7 +156,7 @@ CMakeFiles/RunOpenGL.dir/src/glad.c.s: cmake_force
 CMakeFiles/RunOpenGL.dir/src/main.cpp.o: CMakeFiles/RunOpenGL.dir/flags.make
 CMakeFiles/RunOpenGL.dir/src/main.cpp.o: /home/lak_02/Documents/opengl-stuff/src/main.cpp
 CMakeFiles/RunOpenGL.dir/src/main.cpp.o: CMakeFiles/RunOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RunOpenGL.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RunOpenGL.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RunOpenGL.dir/src/main.cpp.o -MF CMakeFiles/RunOpenGL.dir/src/main.cpp.o.d -o CMakeFiles/RunOpenGL.dir/src/main.cpp.o -c /home/lak_02/Documents/opengl-stuff/src/main.cpp
 
 CMakeFiles/RunOpenGL.dir/src/main.cpp.i: cmake_force
@@ -113,20 +169,28 @@ CMakeFiles/RunOpenGL.dir/src/main.cpp.s: cmake_force
 
 # Object files for target RunOpenGL
 RunOpenGL_OBJECTS = \
+"CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o" \
+"CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o" \
+"CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o" \
 "CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o" \
+"CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o" \
 "CMakeFiles/RunOpenGL.dir/src/glad.c.o" \
 "CMakeFiles/RunOpenGL.dir/src/main.cpp.o"
 
 # External object files for target RunOpenGL
 RunOpenGL_EXTERNAL_OBJECTS =
 
+RunOpenGL: CMakeFiles/RunOpenGL.dir/src/Mesh/Mesh.cpp.o
+RunOpenGL: CMakeFiles/RunOpenGL.dir/src/Renderer/VertexArray.cpp.o
+RunOpenGL: CMakeFiles/RunOpenGL.dir/src/Renderer/VertexBuffer.cpp.o
 RunOpenGL: CMakeFiles/RunOpenGL.dir/src/Shader/Shader.cpp.o
+RunOpenGL: CMakeFiles/RunOpenGL.dir/src/Window/Window.cpp.o
 RunOpenGL: CMakeFiles/RunOpenGL.dir/src/glad.c.o
 RunOpenGL: CMakeFiles/RunOpenGL.dir/src/main.cpp.o
 RunOpenGL: CMakeFiles/RunOpenGL.dir/build.make
 RunOpenGL: /usr/lib/x86_64-linux-gnu/libSDL2.so
 RunOpenGL: CMakeFiles/RunOpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable RunOpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lak_02/Documents/opengl-stuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RunOpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RunOpenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
