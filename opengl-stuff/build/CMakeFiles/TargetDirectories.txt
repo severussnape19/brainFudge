@@ -1,3 +1,0 @@
-/home/lak_02/Documents/opengl-stuff/build/CMakeFiles/RunOpenGL.dir
-/home/lak_02/Documents/opengl-stuff/build/CMakeFiles/edit_cache.dir
-/home/lak_02/Documents/opengl-stuff/build/CMakeFiles/rebuild_cache.dir
