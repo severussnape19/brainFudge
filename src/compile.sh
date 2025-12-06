@@ -1,0 +1,2 @@
+/home/lak_02/vulkansdk/x86_64/bin/glslc Shaders/simple_shader.vert -o Shaders/simple_shader.vert.spv
+/home/lak_02/vulkansdk/x86_64/bin/glslc Shaders/simple_shader.frag -o Shaders/simple_shader.frag.spv
