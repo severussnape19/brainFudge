@@ -13,6 +13,11 @@ namespace lve {
             void run();
         private:
             LveWindow lveWindow{WIDTH, HEIGHT, "HELLOO VULKAN!"}; // window will be created with our first app class
-            LvePipeline lvePipeline{"../src/Shaders/simple_shader.vert.spv", "../src/Shaders/simple_shader.frag.spv"};
+            LveDevice lveDevice{lveWindow};
+            LvePipeline lvePipeline{
+                lveDevice, 
+                "../src/Shaders/simple_shader.vert.spv", 
+                "../src/Shaders/simple_shader.frag.spv", 
+                LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)};
     };
 }
