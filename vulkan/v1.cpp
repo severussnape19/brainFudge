@@ -1,3 +1,4 @@
+// This version only covers the basic skeleton, enabling validation layer and debug messages
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
